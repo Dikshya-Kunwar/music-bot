@@ -3,7 +3,10 @@ from discord.ext import commands
 from discord import FFmpegPCMAudio
 import yt_dlp
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
+# TOKEN = 'MTMzOTE2MTM1MzM5MDI2MDMxNQ.GkqbJ4._aRdCKDtzqGC8ddd_56DBSoxNE6-veOwc-vXfM'
 intents= discord.Intents.all()
 intents.members= True
 client= commands.Bot(command_prefix='!', intents=intents)
@@ -97,4 +100,4 @@ async def stop(ctx):
         await ctx.send("There is no audio playing in the voice channel.")
 
 
-client.run('MTMzOTE2MTM1MzM5MDI2MDMxNQ.GkqbJ4._aRdCKDtzqGC8ddd_56DBSoxNE6-veOwc-vXfM')
+client.run('TOKEN')
