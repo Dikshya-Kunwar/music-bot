@@ -6,7 +6,6 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-# TOKEN = 'MTMzOTE2MTM1MzM5MDI2MDMxNQ.GkqbJ4._aRdCKDtzqGC8ddd_56DBSoxNE6-veOwc-vXfM'
 intents= discord.Intents.all()
 intents.members= True
 client= commands.Bot(command_prefix='!', intents=intents)
