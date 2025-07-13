@@ -15,19 +15,6 @@ async def on_ready():
     print("Bot is ready for use!")
     print("---------------")
 
-# @client.event
-# async def on_member_join(member):
-#     await member.send("Hello" )
-
-# @client.command()
-# async def hello(ctx):
-#     await ctx.send("Hello")
-
-# @client.event
-# async def on_member_remove(member):
-#     channel = client.get_channel("1339530091562274826")
-#     await channel.send("Bye")
-
 #join the voice channel
 @client.command(pass_context=True)
 async def play(ctx, url:str):
