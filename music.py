@@ -4,7 +4,7 @@ from discord import FFmpegPCMAudio
 import yt_dlp
 import os
 from dotenv import load_dotenv
-load_dotenv()
+TOKEN= load_dotenv('.env')
 
 intents= discord.Intents.all()
 intents.members= True
@@ -86,4 +86,4 @@ async def stop(ctx):
         await ctx.send("There is no audio playing in the voice channel.")
 
 
-client.run('TOKEN')
+client.run(os.getenv('TOKEN'))
